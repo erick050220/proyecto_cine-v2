@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>CineBeto</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+  </head>
+  <body class="flex-grow-1 d-flex flex-column bg-dark">
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Cinebeto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="consulta.html">Consulta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Salas
+              </a>
+              <ul class="dropdown-menu border-bottom">
+                <li><a class="dropdown-item" href="sala1.html">Sala 1</a></li>
+                <li><a class="dropdown-item" href="sala2.html">Sala 2</a></li>
+                <li><a class="dropdown-item" href="sala3.html">Sala 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <main >
+      <div >
+        <br>
+        <div class="container">
+          <div class="row"  >
+            <div class="col-sm-12" >
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+                <div class="carousel-inner" class="rounded mx-auto d-block" >
+                  <div class="carousel-item active" >
+                    <img src="./image/la-huerfana.jpg" class="d-block w-100 "  alt="..." height="565px" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/spider_man.png" class="d-block w-100" alt="..." height="565px" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/jurassic_park.png" class="d-block w-100" alt="..." height="565px">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="title-cartelera">Cartelera en Retalhuleu, Guatemala</p>
+      </div>
+
+      <div class="cartelera">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card border-success bg-primary" >
+              <img src="./image/spider_man.png" class="card-img-top" height="300px" alt="..." >
+              <div class="card-body" style="max-height: 290px;">
+                <h5 class="card-title" >Spider man: no way home</h5>
+                <p class="card-text">Con la identidad de Spider-Man ahora revelada, Peter le pide ayuda al Doctor Strange. Cuando un hechizo sale mal, comienzan a aparecer peligrosos enemigos de otros mundos, lo que obliga a Peter a descubrir lo que realmente significa ser Spider-Man.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success bg-primary" >
+              <img src="./image/Supermascotas.png" class="card-img-top" alt="..."  height="300px">
+              <div class="card-body" style="max-height: 290px;">
+                <h5 class="card-title">Liga de Supermascotas</h5>
+                <p class="card-text">La historia sigue a Krypto, la mascota de Superman y cuatro animales que harán equipo con él para vencer a Lex Luthor y liberar a la Liga de la Justicia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success bg-primary">
+              <img src="./image/minions.png" class="card-img-top" alt="..." height="300px" >
+              <div class="card-body">
+                <h5 class="card-title">Minions</h5>
+                <p class="card-text">Son los años 70 y Gru crece en un barrio residencial, en pleno boom de los peinados cardados y los pantalones de campana. Como fan incondicional de un famoso supergrupo de villanos, 'Los salvajes seis'.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success bg-primary" >
+              <img src="./image/la-huerfana.jpg" class="card-img-top" alt="..." width="100px" height="300px">
+              <div class="card-body">
+                <h5 class="card-title">La Huerfana: El origen</h5>
+                <p class="card-text">Una valiente y apasionada huérfana encuentra un hogar poco común con dos hermanos de caracteres muy distintos. Basada en la famosa novela "Ana de las Tejas Verdes". Ve todo lo que quieras.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success bg-primary">
+              <img src="./image/jurassic_park.png" class="card-img-top" alt="..." width="100px" height="300px">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Cuatro años después de la destrucción de Isla Nublar, los operativos de Biosyn intentan rastrear a Maisie Lockwood, mientras que la Dra. Ellie Sattler investiga un enjambre de insectos gigantes modificados genéticamente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-success bg-primary">
+              <img src="./image/black-adam.png" class="card-img-top" alt="..." width="100px" height="300px">
+              <div class="card-body ">
+                <h5 class="card-title ">Black Adam</h5>
+                <p class="card-text">Casi 5.000 años después de haber sido dotado de los poderes omnipotentes de los antiguos dioses -y encarcelado con la misma rapidez-, Black Adam (Johnson) es liberado de su tumba terrenal, listo para desatar su forma única de justicia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
