@@ -77,36 +77,36 @@ if(!$connection)
         $resultado = mysqli_query($connection,$instruccion_SQL);
 
         //$consulta = "SELECT * FROM tabla where id ='2'"; si queremos que nos muestre solo un registro en especifivo de ID
-//         $consulta = "SELECT * FROM tabla_form";
+        $consulta = "SELECT * FROM tabla_form";
         
-// $result = mysqli_query($connection,$consulta);
-// if(!$result) 
-// {
-//     echo "No se ha podido realizar la consulta";
-// }
-// echo "<table>";
-// echo "<tr>";
-// echo "<th><h1>id</th></h1>";
-// echo "<th><h1>Nombre</th></h1>";
-// echo "<th><h1>Usuario</th></h1>";
-// echo "<th><h1>Contraseña</th></h1>";
-// echo "</tr>";
+$result = mysqli_query($connection,$consulta);
+if(!$result) 
+{
+    echo "No se ha podido realizar la consulta";
+}
+echo "<table>";
+echo "<tr>";
+echo "<th><h1>id</th></h1>";
+echo "<th><h1>Nombre</th></h1>";
+echo "<th><h1>Usuario</th></h1>";
+echo "<th><h1>Contraseña</th></h1>";
+echo "</tr>";
 
-// while ($colum = mysqli_fetch_array($result))
-//  {
-//     echo "<tr>";
-//     echo "<td><h2>" . $colum['id']. "</td></h2>";
-//     echo "<td><h2>" . $colum['nombre']. "</td></h2>";
-//     echo "<td><h2>" . $colum['usuario'] . "</td></h2>";
-//     echo "<td><h2>" . $colum['contraseña'] . "</td></h2>";
-//     echo "</tr>";
-// }
-// echo "</table>";
+while ($colum = mysqli_fetch_array($result))
+ {
+    echo "<tr>";
+    echo "<td><h2>" . $colum['id']. "</td></h2>";
+    echo "<td><h2>" . $colum['nombre']. "</td></h2>";
+    echo "<td><h2>" . $colum['usuario'] . "</td></h2>";
+    echo "<td><h2>" . $colum['contraseña'] . "</td></h2>";
+    echo "</tr>";
+}
+echo "</table>";
 
-// mysqli_close( $connection );
+mysqli_close( $connection );
 
-//    //echo "Fuera " ;
-//    echo'<a href="index.html"> Volver Atrás</a>';
+   //echo "Fuera " ;
+   echo'<a href="index.html"> Volver Atrás</a>';
 
 
 ?>

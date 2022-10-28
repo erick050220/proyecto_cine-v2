@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservación</title>
-    <link rel="stylesheet" type="text/css" href="wenas.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
   </head>
   <body>
     <h1>Reserva aquí tu asiento</h1>
-    <form action="registro.php" name="" method="POST">
-      <table>
+    <form action="registro.php" name="" method="POST" class="tabla">
+      <table border="0" align="center">
         <tr>
           <td>
             DPI:
@@ -37,21 +37,47 @@
             <input type="number" name="contraseña" id="Temperatura"  required />
           </td>
         </tr>
+
         <tr>
           <td>
-            Nombre de la pelicula:
+            <option selected>Seleccione la pelicula</option>
           </td>
           <td>
-            <label for="text"></label>
-            <input type="text" name="nombrePelicula" id="nombrePelicula"  required />
+          <select class="form-select" aria-label="Default select example">
+          <option value="1">Spider Man: No way home</option>
+          <option value="2">Black Adam</option>
+          <option value="3">Minions</option>
+          <option value="4">La Huerfana: El origen</option>
+          <option value="5">Liga de mascotas</option>
+          <option value="3">Minions</option>
+          <option value="3">Jurassic World Dominion</option>
+          </select>
           </td>
         </tr>
+
+        <tr>
+          <td>
+            <p>elija el horario</p>
+          </td>
+          <td>
+            <select class="form-select" aria-label="Default select example">
+              <option value="1">Spider Man: No way home</option>
+              <option value="2">Black Adam</option>
+              <option value="3">Minions</option>
+              <option value="4">La Huerfana: El origen</option>
+              <option value="5">Liga de mascotas</option>
+              <option value="3">Minions</option>
+              <option value="3">Jurassic World Dominion</option>
+              </select>
+          </td>
+        </tr>
+        
         <tr>
           <td>&nbsp;</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td>
+          <td align="center">
             <input
               type="submit"
               name="OK"
